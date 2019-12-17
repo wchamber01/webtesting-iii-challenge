@@ -1,15 +1,18 @@
 // Test away!
 import React from "react";
-import { render } from "@testing-library/react";
-import Display from "../display/Display";
+import { render, cleanup, fireEvent } from "@testing-library/react";
+import '@testing-library/jest-dom/extend-expect';
 import Controls from "../controls/Controls";
-// import Controls from "../controls/Controls";
 
-// it("tests if gate cannot be closed or opened if it is locked", () => {
-//   const locked = true;
-//   fireEvent.click(toggle - btn);
-//   expect;
-// });
+afterEach(cleanup);
+
+it("tests if gate cannot be closed or opened if it is locked", () => {
+  afterEach(cleanup);
+  const { get}
+  const locked = true;
+  // fireEvent.click(toggle - btn);
+  expect(openGate).toBeDisabled;
+});
 
 //Controls Component
 // it("tests if there are buttons to toggle the closed and locked states", () => {});

@@ -23,6 +23,7 @@ it("tests if gate defaults to unlocked and open", () => {
 });
 
 //Dashboard
-// it("tests if dashboard displays the controls", () => {
-
-// });
+it("tests if dashboard displays the controls", () => {
+  const { getAllByText } = render(<Controls />);
+  getAllByText(/gate/i);
+});
