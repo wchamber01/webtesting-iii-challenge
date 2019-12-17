@@ -16,12 +16,12 @@ it("tests if gate is open/closed and locked/unlocked", () => {
   getByText("Closed");
   // getByText("Open");
 });
+
 // it("tests if displays 'Closed' if the closed prop is true and 'Open' if otherwise", () => {});
 
 it("tests if gate is open/closed and locked/unlocked", () => {
   afterEach(cleanup);
   const { getByText } = render(<Display closed={true} />);
-
   getByText("Closed");
 });
 // it("tests if displays 'Locked' if the locked prop is true and 'Unlocked' if otherwise", () => {});
